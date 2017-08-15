@@ -1,6 +1,5 @@
 package cf.mirror.com.myapplication;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -11,9 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.libzingbar.CaptureActivity;
-import com.example.libzingbar.CaptureInfo;
-import com.example.libzingbar.zbar.QREncode;
+import com.mirror.libzingbar.CaptureActivity;
+import com.mirror.libzingbar.CaptureInfo;
+import com.mirror.libzingbar.zbar.QREncode;
 
 public class MainActivity extends AppCompatActivity{
 

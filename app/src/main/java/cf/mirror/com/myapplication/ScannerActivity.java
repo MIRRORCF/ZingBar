@@ -2,8 +2,7 @@ package cf.mirror.com.myapplication;
 
 import android.widget.Toast;
 
-import com.example.libzingbar.CaptureActivity;
-import com.example.libzingbar.CaptureInfo;
+import com.mirror.libzingbar.CaptureActivity;
 
 /**
  * Created by Administrator on 2017/7/17 0017.
