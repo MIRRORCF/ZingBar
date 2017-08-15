@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_capture_containter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/scan_mask"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/scan_mask" >
+
+        <LinearLayout
+            android:id="@+id/llayout_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_back_f" />
+
+            <TextView
+                android:id="@+id/txt_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_right_titleL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_album"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_right_titleR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_flash_lamp"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_center_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条形码/二维码扫描"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rlayout_title"
+        android:background="@mipmap/scan_mask" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_capture_crop"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/top_mask"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/frame_scan" >
+
+        <ImageView
+            android:id="@+id/img_capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/scanning" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rlayout_capture_crop"
+        android:background="@mipmap/scan_mask" />
+
+    <ImageView
+        android:id="@+id/left_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toLeftOf="@id/rlayout_capture_crop"
+        android:background="@mipmap/scan_mask" />
+
+    <ImageView
+        android:id="@+id/right_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toRightOf="@id/rlayout_capture_crop"
+        android:background="@mipmap/scan_mask" />
+
+    <TextView
+        android:id="@+id/tv_caution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rlayout_capture_crop"
+        android:layout_centerHorizontal="true"
+        android:text="放入框内，自动扫描"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>
