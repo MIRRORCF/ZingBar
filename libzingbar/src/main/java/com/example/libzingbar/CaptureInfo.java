@@ -16,4 +16,6 @@ public class CaptureInfo {
     public final static int open_album = 117;//打开相册
     public final static int picture_path = 118;//图片路径
     public final static String scanner_result = "Scanner_Result";
+    public final static String SELECT_PICTURE = "intent_selected_picture";
+
 }

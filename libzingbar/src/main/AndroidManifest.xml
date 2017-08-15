@@ -7,7 +7,7 @@
         <activity android:name=".CaptureActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".PictureActivity"
+        <activity android:name=".AlbumActivity"
             android:screenOrientation="portrait"/>
 
     </application>

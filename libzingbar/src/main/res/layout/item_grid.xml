@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rl_item"
+    android:id="@+id/rl_item_grid"
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:clickable="true"
     android:focusable="true" >
 
     <ImageView
-        android:id="@+id/iv"
+        android:id="@+id/iv_itme"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:scaleType="fitXY"

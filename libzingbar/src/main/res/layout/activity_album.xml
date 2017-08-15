@@ -9,7 +9,7 @@
         android:background="#FFFFFF">
 
         <TextView
-            android:id="@+id/tv_back"
+            android:id="@+id/tv_back_album"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -27,11 +27,15 @@
 
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle_picture"
+    <GridView
+        android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp">
 
-    </android.support.v7.widget.RecyclerView>
+    </GridView>
 
 </LinearLayout>
